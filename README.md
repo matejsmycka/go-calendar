@@ -32,9 +32,9 @@ Usage of go-calendar:
 
 ```bash
 URL=https://calendar.google.com/calendar/ical/.../basic.ics
-go-calendar -url $URL -limit 10
+go-calendar -url $URL -limit 7
 # or
-go-calendar -file events.ics -limit 10
+go-calendar -file events.ics -limit 1
 ```
 
 ## Calendar integration
