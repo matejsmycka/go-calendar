@@ -1,6 +1,6 @@
 # Go-Calendar
 
-This is a simple TUI calendar written in Go using the [libgloss](https://github.com/charmbracelet/lipgloss) library.
+Simple TUI calendar written in Go using the [libgloss](https://github.com/charmbracelet/lipgloss) library.
 
 Go-Calendar reads an ICS file from a URL and displays the upcoming events in a table view.
 
