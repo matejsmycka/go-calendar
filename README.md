@@ -46,3 +46,20 @@ go-calendar -file events.ics -limit 1
 3. Click on "Shared Calendars" and select the calendar you want to share
 4. Publish the calendar by clicking on "Publish Online" and copy the ICS link
 5. Use the ICS link in the `URL` environment variable
+
+## Terminal integration
+
+### Fish
+
+To make your calendar appear on startup of a new shell without having to wait.
+
+1. `vim ~/.config/fish/config.fish`
+2. Add following code to the conf.
+
+```
+function fish_greeting
+    export URL="https://outlook.office365.com/calendar.ics"
+    go-calendar -file /tmp/calendar.ics
+    curl $URL > /tmp/calendar.ics 2>/dev/null &
+end
+```
